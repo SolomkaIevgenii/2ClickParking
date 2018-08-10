@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Паркуйся вільно</string>
+    <string name="app_title_enter">Увійти</string>
+    <string name="app_title_miss_password">Логін і/або пароль невірний</string>
+    <string name="app_title_save_password">Зберегти пароль</string>
+    <string name="app_title_password">Пароль</string>
+    <string name="app_title_login">Логін</string>
+    <string name="app_title_blocked_transactions">Щахрайські операції</string>
+    <string name="app_title_enter_car_number">Вкажіть номер авто</string>
+    <string name="app_title_request">Запит</string>
+</resources>
