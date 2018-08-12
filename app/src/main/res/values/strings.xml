@@ -8,4 +8,5 @@
     <string name="app_title_blocked_transactions">Щахрайські операції</string>
     <string name="app_title_enter_car_number">Вкажіть номер авто</string>
     <string name="app_title_request">Запит</string>
+    <string name="app_title_sDate">Date</string>
 </resources>

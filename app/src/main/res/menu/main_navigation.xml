@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/kayboard"
         android:enabled="true"
         android:icon="@drawable/ic_keyboard"
         android:title="Kayboard enter"
-        android:visible="true" />
+        app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/scaner"
         android:enabled="true"
         android:icon="@drawable/ic_scaner"
         android:title="Scaner"
-        android:visible="true" />
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/warning"
+        android:enabled="true"
+        android:icon="@drawable/ic_ticket"
+        android:title="Ticket"
+        app:showAsAction="ifRoom"/>
 </menu>

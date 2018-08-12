@@ -2,8 +2,10 @@ package com.example.john.a2clickparking;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,7 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     public static final String EXTRA_KEY_LOGIN = "Логин";
     public static final String EXTRA_KEY_PASSWORD = "Пароль";
@@ -47,27 +49,29 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager()
                                 .beginTransaction()
                                 .replace(R.id.container, new KeyboardFragment())
-                                .addToBackStack(null)
                                 .commit();
 
                         return true;
 
                     case R.id.scaner:
-                        Toast.makeText(MainActivity.this, "Раздел в разработке", Toast.LENGTH_SHORT).show();
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.container, new ScanerFragment())
+                                .commit();
+                        //Toast.makeText(MainActivity.this, "Раздел в разработке", Toast.LENGTH_SHORT).show();
+                        return true;
+
+                    case R.id.warning:
+                        Intent intent = new Intent(getBaseContext(), TicketActivity.class);
+                        startActivity(intent);
                         return false;
                 }
                 return false;
             }
         });
 
-            findViewById(R.id.buttonRequest).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkPayment();
-            }
-        });
     }
-    private void checkPayment(){
+    public void checkPayment(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Номер авто: ");
         builder.setMessage("555");
