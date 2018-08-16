@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity{
                         //Toast.makeText(MainActivity.this, "Раздел в разработке", Toast.LENGTH_SHORT).show();
                         return true;
 
-                    case R.id.warning:
+                    case R.id.ticket:
                         Intent intent = new Intent(getBaseContext(), TicketActivity.class);
                         startActivity(intent);
                         return false;

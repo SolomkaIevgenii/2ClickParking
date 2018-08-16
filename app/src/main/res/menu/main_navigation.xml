@@ -14,9 +14,9 @@
         android:title="Scaner"
         app:showAsAction="ifRoom"/>
     <item
-        android:id="@+id/warning"
+        android:id="@+id/ticket"
         android:enabled="true"
         android:icon="@drawable/ic_ticket"
         android:title="Ticket"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="ifRoom" />
 </menu>

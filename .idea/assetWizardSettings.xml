@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/D:/Work/My%20Programs/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_add_a_photo_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/D:/Android/AStudio/plugins/android/lib/android.jar!/images/material_design_icons/alert/ic_warning_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,7 +33,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_take_photo" />
+                            <entry key="outputName" value="ic_ticket" />
                             <entry key="sourceFile" value="C:\Users\John" />
                           </map>
                         </option>
